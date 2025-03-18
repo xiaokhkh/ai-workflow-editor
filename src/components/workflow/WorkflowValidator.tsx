@@ -118,6 +118,7 @@ export default function WorkflowValidator({
 		});
 
 		return errors;
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [nodes]);
 
 	// 添加判断节点是否完全配置的辅助函数

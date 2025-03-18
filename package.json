@@ -6,7 +6,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
 	},
 	"dependencies": {
 		"@geist-ui/core": "^2.3.8",
@@ -23,10 +23,13 @@
 		"zustand": "^4.5.2"
 	},
 	"devDependencies": {
+		"@eslint/js": "^9.22.0",
 		"@types/file-saver": "^2.0.7",
 		"@types/node": "^20.11.24",
 		"@types/react": "^18.2.61",
 		"@types/react-dom": "^18.2.19",
+		"@typescript-eslint/eslint-plugin": "^8.26.1",
+		"@typescript-eslint/parser": "^8.26.1",
 		"autoprefixer": "^10.4.14",
 		"eslint": "^8.57.0",
 		"eslint-config-next": "15.0.0",

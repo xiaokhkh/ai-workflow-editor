@@ -18,6 +18,7 @@ interface TemplateLibraryProps {
 
 export default function TemplateLibrary({ setNodes, setEdges, setHistory }: TemplateLibraryProps) {
 	// 模板列表
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const templates = [
 		{
 			id: "simple-conversation",

@@ -311,6 +311,7 @@ export default function ExecutionVisualization({
 				executeStep(currentStep + 1, lastOutput);
 			}
 		},
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 		[
 			executionMode,
 			isExecuting,

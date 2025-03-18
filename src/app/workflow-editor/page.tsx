@@ -2,7 +2,7 @@
 
 import "reactflow/dist/style.css";
 
-import ReactFlow, {
+import {
 	Background,
 	Connection,
 	Controls,
@@ -13,6 +13,7 @@ import ReactFlow, {
 	Node,
 	NodeChange,
 	Panel,
+	ReactFlow,
 	ReactFlowInstance,
 	ReactFlowProvider,
 	addEdge,
@@ -327,7 +328,14 @@ function WorkflowEditorContent() {
 			// 模拟执行路径
 			simulateExecution(startNodeId);
 		}
-	}, [nodes, edges, validateWorkflow, setValidationErrors, simulateExecution]);
+	}, [
+		nodes,
+		validateWorkflow,
+		setValidationErrors,
+		simulateExecution,
+		setIsRunning,
+		setActiveNodeId,
+	]);
 
 	// 停止工作流
 	const stopWorkflow = useCallback(() => {
